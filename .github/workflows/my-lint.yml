@@ -3,7 +3,7 @@
 # My created new GitHub Action)))
 #-----------------
 
-name: GitHub Actions_linter
+name: GitHub-Actions-linter
 
 
 on: 

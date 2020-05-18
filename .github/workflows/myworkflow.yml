@@ -26,7 +26,7 @@ jobs:
       
       
     - name: install Linter
-      run: npm install eslint --save-dev
+      run: npm install --save-dev eslint
       
     - name: Run Linter
       run: make lint

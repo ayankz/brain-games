@@ -22,9 +22,12 @@ jobs:
       with:
         node-version: '13.x'
     - name: Install Depend-s
-      run: npm ci
+      run: npm install
       
       
-    - name: Run Lint from Makefile
+    - name: install Linter
+      run: npm install eslint --save-dev
+      
+    - name: Run Linter
       run: npx lint .
 

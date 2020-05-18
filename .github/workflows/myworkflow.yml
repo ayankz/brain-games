@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps: 
-    - name: Make Lint
+    - name: Clone my repo
+      run: actions/checkout@v1
+      
+    - name: Run Lint from Makefile
       run: make lint
 

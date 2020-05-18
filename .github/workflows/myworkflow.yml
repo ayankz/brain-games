@@ -22,7 +22,7 @@ jobs:
       with:
         node-version: '13.x'
     - name: Install Depend-s
-      run: npm install
+      run: npm ci
       
       
     - name: Run Lint from Makefile

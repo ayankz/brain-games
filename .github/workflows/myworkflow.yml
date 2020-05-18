@@ -18,6 +18,7 @@ jobs:
     - name: Clone my repo
       uses: actions/checkout@v1
       
+      
     - name: Run Lint from Makefile
-      run: make lint
+      run: npx lint .
 

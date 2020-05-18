@@ -15,5 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps: 
-    - name: Checking by Linter
+    - name: Go to Makefile Dir
+      run: cd backend-project-lvl1
+    
+    - name: Make Lint
       run: make lint

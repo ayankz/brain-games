@@ -7,6 +7,7 @@
 
 
 #Start Brain-even games/Win version:
+
 {"version": 2, "width": 188, "height": 25, "timestamp": 1590343735, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
 [0.042522, "o", "\u001b]0;ayan@ayan-Virtual-Machine: ~/backend-project-lvl1\u0007\u001b[01;32mayan@ayan-Virtual-Machine\u001b[00m:\u001b[01;34m~/backend-project-lvl1\u001b[00m$ "]
 [1.478034, "o", "b"]
@@ -51,6 +52,7 @@
 [20.673858, "o", "\r\nexit\r\n"]
 
 #Start Brain-even games/Lose version:
+
 {"version": 2, "width": 188, "height": 25, "timestamp": 1590343828, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
 [0.072028, "o", "\u001b]0;ayan@ayan-Virtual-Machine: ~/backend-project-lvl1\u0007\u001b[01;32mayan@ayan-Virtual-Machine\u001b[00m:\u001b[01;34m~/backend-project-lvl1\u001b[00m$ "]
 [1.895237, "o", "b"]

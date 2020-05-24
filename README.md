@@ -8,8 +8,8 @@
 
 #Start Brain-even games/Win version:
 
-https://asciinema.org/a/NevQ9vhYKGvRjcQJBGcj8KTkJ
+<img src= https://asciinema.org/a/NevQ9vhYKGvRjcQJBGcj8KTkJ>
 
 #Start Brain-even games/Lose version:
 
-https://asciinema.org/a/3OP3kPqY48IVUKrA8UwrQAg1F
+<img src= https://asciinema.org/a/3OP3kPqY48IVUKrA8UwrQAg1F>

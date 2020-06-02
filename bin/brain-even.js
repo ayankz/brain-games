@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import evenStart from '../logic/even.js';
+import even from '../src/games/even.js';
 
-evenStart();
+even();

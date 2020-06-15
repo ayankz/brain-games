@@ -1,5 +1,5 @@
 import gameStart from '../index.js';
-import { getRandomNumber } from './random.js';
+import { getRandomNum } from '../random.js';
 
 
 const getCorrectAnswer = (randomNumber) => {
@@ -7,17 +7,17 @@ const getCorrectAnswer = (randomNumber) => {
   return isEven;
 };
 
-const getData = () => {
-  const randomNumber = getRandomNumber(1, 100);
+const getGameData = () => {
+  const randomNumber = getRandomNum(1, 100);
   const question = `${randomNumber}`;
-  const correct = (getCorrectAnswer(randomNumber));
-  const gameData = [correct, question];
+  const correctAnswer = (getCorrectAnswer(randomNumber));
+  const gameData = [correctAnswer, question];
   return gameData;
 };
 
 const gameQuestion = 'Answer "yes" if the number is even, otherwise answer "no".';
 const even = () => {
-  gameStart(gameQuestion, getData);
+  gameStart(gameQuestion, getGameData);
 };
 
 export default even;

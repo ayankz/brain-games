@@ -1,5 +1,5 @@
 import gameStart from '../index.js';
-import { getRandomNumber } from './random.js';
+import { getRandomNum } from '../random.js';
 
 const getNOD = (number1, number2) => {
   if (number2 === 0) {
@@ -7,17 +7,17 @@ const getNOD = (number1, number2) => {
   } return getNOD(number2, number1 % number2);
 };
 
-const getData = () => {
-  const number1 = getRandomNumber(1, 100);
-  const number2 = getRandomNumber(1, 100);
+const getGameData = () => {
+  const number1 = getRandomNum(1, 100);
+  const number2 = getRandomNum(1, 100);
   const question = `${number1} ${number2}`;
-  const correct = (getNOD(number1, number2));
-  const gameData = [correct, question];
+  const correctAnswer = (getNOD(number1, number2));
+  const gameData = [correctAnswer, question];
   return gameData;
 };
 
 const gameQuestion = 'Find the greatest common divisor of given numbers?';
 const gcd = () => {
-  gameStart(gameQuestion, getData);
+  gameStart(gameQuestion, getGameData);
 };
 export default gcd;

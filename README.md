@@ -6,14 +6,47 @@
 <img src= https://github.com/ayankz/backend-project-lvl1/workflows/GitHub-Actions-linter/badge.svg>
 
 
-#Start Brain-even games/Win version:
+---------Start Brain-Calc game---------
+WIN version
 
-[![asciicast](https://asciinema.org/a/NevQ9vhYKGvRjcQJBGcj8KTkJ.svg)](https://asciinema.org/a/NevQ9vhYKGvRjcQJBGcj8KTkJ)
+[![asciicast](https://asciinema.org/a/7xhBTN01xF3l9cf3HCemswl8q.svg)](https://asciinema.org/a/7xhBTN01xF3l9cf3HCemswl8q)
 
-#Start Brain-even games/Lose version:
+LOSE version
 
-<<<<<<< HEAD
-[![asciicast](https://asciinema.org/a/3OP3kPqY48IVUKrA8UwrQAg1F.svg)](https://asciinema.org/a/3OP3kPqY48IVUKrA8UwrQAg1F)
-=======
-[![asciicast](https://asciinema.org/a/3OP3kPqY48IVUKrA8UwrQAg1F.svg)](https://asciinema.org/a/3OP3kPqY48IVUKrA8UwrQAg1F)
->>>>>>> master
+[![asciicast](https://asciinema.org/a/XW2lRHnZxXapqENydK4TpDw4C.svg)](https://asciinema.org/a/XW2lRHnZxXapqENydK4TpDw4C)
+
+---------Start Brain-Even game---------
+WIN version
+
+[![asciicast](https://asciinema.org/a/bO14NtI9FYrxu48Oq3lQcF2yp.svg)](https://asciinema.org/a/bO14NtI9FYrxu48Oq3lQcF2yp)
+
+LOSE version
+
+[![asciicast](https://asciinema.org/a/A5nP7Q3ZLOE1422qJs9Bx2ITW.svg)](https://asciinema.org/a/A5nP7Q3ZLOE1422qJs9Bx2ITW)
+
+---------Start Brain-GCD game---------
+WIN version
+
+[![asciicast](https://asciinema.org/a/nNb9Ah5AxJM2J4357XMvezvLq.svg)](https://asciinema.org/a/nNb9Ah5AxJM2J4357XMvezvLq)
+
+LOSE version
+
+[![asciicast](https://asciinema.org/a/PT7Se9Fq0kk2XeXp7f7fSJLYC.svg)](https://asciinema.org/a/PT7Se9Fq0kk2XeXp7f7fSJLYC)
+
+---------Start Brain-Prime game---------
+WIN version
+
+[![asciicast](https://asciinema.org/a/asv2sv0lGtEFfNBvifxRn61dA.svg)](https://asciinema.org/a/asv2sv0lGtEFfNBvifxRn61dA)
+
+LOSE version
+
+[![asciicast](https://asciinema.org/a/Ky4iVp9cL8MAlu8cLAJYc2FAo.svg)](https://asciinema.org/a/Ky4iVp9cL8MAlu8cLAJYc2FAo)
+
+---------Start Brain-Prime game---------
+WIN version
+
+[![asciicast](https://asciinema.org/a/PSb1lSc5NafOd0TwiIhLCCyCd.svg)](https://asciinema.org/a/PSb1lSc5NafOd0TwiIhLCCyCd)
+
+LOSE version
+
+[![asciicast](https://asciinema.org/a/ZXTFH1pqL9dJtxmwZVR52l5Wa.svg)](https://asciinema.org/a/ZXTFH1pqL9dJtxmwZVR52l5Wa)

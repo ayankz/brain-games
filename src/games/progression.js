@@ -1,14 +1,15 @@
 import gameStart from '../index.js';
 import { getRandomNum } from '../random.js';
 
-const getArray = () => {
+const getColl = () => {
   const array = [];
-  const first = getRandomNum(1, 20);
-  const increment = getRandomNum(2, 4);
-  for (let i = first; i <= first + 30; i += increment) {
-    array.push(i);
+  const firstNumber = getRandomNum(0, 20);
+  const step = getRandomNum(1, 6);
+  const arrayLength = 10;
+  const secretIndex = getRandomNum(0, arrayLength);
+  for (let i = 0; i < arrayLength; i += 1) {
+    array[i] = firstNumber + i * step;
   }
-  const secretIndex = getRandomNum(0, 9);
   const secretNumber = array[secretIndex];
   array[secretIndex] = '..';
   const arrayData = [array, secretNumber];
@@ -16,15 +17,15 @@ const getArray = () => {
 };
 
 const getGameData = () => {
-  const arrayData = getArray();
-  const question = arrayData[0].join(' ');
-  const correctAnswer = arrayData[1];
+  const arrayData = getColl();
+  const [array, secretNumber] = arrayData;
+  const question = array.join(' ');
+  const correctAnswer = secretNumber;
   const gameData = [correctAnswer, question];
   return gameData;
 };
 
 const gameQuestion = 'What number is missing in the progression?';
-const progression = () => {
-  gameStart(gameQuestion, getGameData);
-};
+const progression = () => gameStart(gameQuestion, getGameData);
+
 export default progression;

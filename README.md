@@ -42,7 +42,7 @@ LOSE version
 
 [![asciicast](https://asciinema.org/a/Ky4iVp9cL8MAlu8cLAJYc2FAo.svg)](https://asciinema.org/a/Ky4iVp9cL8MAlu8cLAJYc2FAo)
 
----------Start Brain-Prime game---------
+---------Start Brain-Progression game---------
 WIN version
 
 [![asciicast](https://asciinema.org/a/PSb1lSc5NafOd0TwiIhLCCyCd.svg)](https://asciinema.org/a/PSb1lSc5NafOd0TwiIhLCCyCd)

@@ -14,7 +14,8 @@ const loop = (userName, getGameData) => {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
       console.log(`Let's try again, ${userName}!`);
       return;
-    } console.log('Correct!');
+    }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };

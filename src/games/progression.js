@@ -1,31 +1,32 @@
 import gameStart from '../index.js';
 import { getRandomNum } from '../random.js';
 
+const gameQuestion = 'What number is missing in the progression?';
+const maxStep = 6;
 const getColl = () => {
-  const array = [];
-  const firstNumber = getRandomNum(0, 20);
-  const step = getRandomNum(1, 6);
+  const coll = [];
+  const firstNumber = getRandomNum();
+  const step = getRandomNum(1, maxStep);
   const arrayLength = 10;
   const secretIndex = getRandomNum(0, arrayLength);
   for (let i = 0; i < arrayLength; i += 1) {
-    array[i] = firstNumber + i * step;
+    coll[i] = firstNumber + i * step;
   }
-  const secretNumber = array[secretIndex];
-  array[secretIndex] = '..';
-  const arrayData = [array, secretNumber];
+  const secretNumber = coll[secretIndex];
+  coll[secretIndex] = '..';
+  const arrayData = [coll, secretNumber];
   return arrayData;
 };
 
 const getGameData = () => {
   const arrayData = getColl();
-  const [array, secretNumber] = arrayData;
-  const question = array.join(' ');
+  const [coll, secretNumber] = arrayData;
+  const question = coll.join(' ');
   const correctAnswer = secretNumber;
   const gameData = [correctAnswer, question];
   return gameData;
 };
 
-const gameQuestion = 'What number is missing in the progression?';
 const progression = () => gameStart(gameQuestion, getGameData);
 
 export default progression;

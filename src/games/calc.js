@@ -1,7 +1,7 @@
 import gameStart from '../index.js';
 import getRandomNum from '../random.js';
 
-const gameQuestion = 'What is the result of the expression?';
+const discription = 'What is the result of the expression?';
 const calculate = (number1, number2, operator) => {
   switch (operator) {
     case '+':
@@ -26,6 +26,6 @@ const getGameData = () => {
   return gameData;
 };
 
-const calc = () => gameStart(gameQuestion, getGameData);
+const calc = () => gameStart(discription, getGameData);
 
 export default calc;

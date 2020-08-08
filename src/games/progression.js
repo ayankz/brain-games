@@ -1,20 +1,20 @@
 import gameStart from '../index.js';
 import getRandomNum from '../random.js';
 
-const discription = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 const maxStep = 6;
 const makeProgression = () => {
-  const coll = [];
+  const rowOfnumbers = [];
   const firstNumber = getRandomNum();
   const step = getRandomNum(1, maxStep);
-  const arrayLength = 10;
-  const secretIndex = getRandomNum(0, arrayLength);
-  for (let i = 0; i < arrayLength; i += 1) {
-    coll[i] = firstNumber + i * step;
+  const rowOfnumbersLength = 10;
+  const secretIndex = getRandomNum(0, rowOfnumbersLength);
+  for (let i = 0; i < rowOfnumbersLength; i += 1) {
+    rowOfnumbers[i] = firstNumber + i * step;
   }
-  const secretNumber = coll[secretIndex];
-  coll[secretIndex] = '..';
-  const progressions = [coll, secretNumber];
+  const secretNumber = rowOfnumbers[secretIndex];
+  rowOfnumbers[secretIndex] = '..';
+  const progressions = [rowOfnumbers, secretNumber];
   return progressions;
 };
 
@@ -27,6 +27,6 @@ const getGameData = () => {
   return gameData;
 };
 
-const progression = () => gameStart(discription, getGameData);
+const progression = () => gameStart(description, getGameData);
 
 export default progression;

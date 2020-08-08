@@ -21,11 +21,11 @@ const loop = (userName, getGameData) => {
 };
 
 
-const gameStart = (discription, getGameData) => {
+const gameStart = (description, getGameData) => {
   welcome();
   const userName = readlineSync.question('May I have your name? ');
   greeting(userName);
-  console.log(discription);
+  console.log(description);
   loop(userName, getGameData);
 };
 

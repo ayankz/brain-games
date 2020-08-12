@@ -4,24 +4,24 @@ import getRandomNum from '../random.js';
 const description = 'What number is missing in the progression?';
 const maxStep = 6;
 const rowOfnumbersLength = 10;
-const makeProgressionWithSecretNumber = () => {
+const makeProgression = () => {
   const rowOfnumbers = [];
   const firstNumber = getRandomNum();
   const step = getRandomNum(1, maxStep);
-  const secretIndex = getRandomNum(0, rowOfnumbersLength);
+  
   for (let i = 0; i < rowOfnumbersLength; i += 1) {
     rowOfnumbers[i] = firstNumber + i * step;
   }
-  const secretNumber = rowOfnumbers[secretIndex];
-  rowOfnumbers[secretIndex] = '..';
-  const progressions = [rowOfnumbers, secretNumber];
+  const progressions = rowOfnumbers;
   return progressions;
 };
 
 const getGameData = () => {
-  const progressions = makeProgressionWithSecretNumber();
-  const [progression, secretNumber] = progressions;
-  const question = progression.join(' ');
+  const progressions = makeProgression();
+  const secretIndex = getRandomNum(0, rowOfnumbersLength);
+  const secretNumber = progressions[secretIndex];
+  progressions[secretIndex] = '..';
+  const question = progressions.join(' ');
   const correctAnswer = secretNumber;
   const gameData = [correctAnswer, question];
   return gameData;

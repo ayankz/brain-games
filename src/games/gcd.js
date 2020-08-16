@@ -18,6 +18,4 @@ const getGameData = () => {
   return gameData;
 };
 
-const getGcd = () => gameStart(description, getGameData);
-
-export default getGcd;
+export default () => gameStart(description, getGameData);

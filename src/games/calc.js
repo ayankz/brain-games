@@ -11,7 +11,7 @@ const calculate = (number1, number2, operator) => {
     case '-':
       return number1 - number2;
     default:
-      throw new Error(operator);
+      throw new Error(`Unknown operator: ${operator}`);
   }
 };
 
@@ -26,6 +26,4 @@ const getGameData = () => {
   return gameData;
 };
 
-const calc = () => gameStart(description, getGameData);
-
-export default calc;
+export default () => gameStart(description, getGameData);

@@ -26,6 +26,4 @@ const getGameData = () => {
   return gameData;
 };
 
-const progression = () => gameStart(description, getGameData);
-
-export default progression;
+export default () => gameStart(description, getGameData);

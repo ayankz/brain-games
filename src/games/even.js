@@ -25,6 +25,4 @@ const getGameData = () => {
 };
 
 
-const even = () => gameStart(description, getGameData);
-
-export default even;
+export default () => gameStart(description, getGameData);

@@ -32,6 +32,4 @@ const getGameData = () => {
   return gameData;
 };
 
-const prime = () => gameStart(description, getGameData);
-
-export default prime;
+export default () => gameStart(description, getGameData);

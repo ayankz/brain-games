@@ -1,10 +1,10 @@
 import gameStart from '../index.js';
 import getRandomNum from '../random.js';
 
+const progressionLength = 10;
+const maxStep = 6;
 const description = 'What number is missing in the progression?';
-const makeProgression = () => {
-  const progressionLength = 10;
-  const maxStep = 6;
+const makeProgression = (progressionLength, maxStep) => {
   const progression = [];
   const firstNumber = getRandomNum();
   const step = getRandomNum(1, maxStep);
@@ -15,7 +15,7 @@ const makeProgression = () => {
 };
 
 const getGameData = () => {
-  const progression = makeProgression();
+  const progression = makeProgression(progressionLength, maxStep);
   const secretIndex = getRandomNum(0, progression.length);
   const secretNumber = progression[secretIndex];
   progression[secretIndex] = '..';

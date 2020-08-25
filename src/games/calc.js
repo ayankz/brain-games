@@ -19,9 +19,9 @@ const getGameData = () => {
   const operator = ['+', '*', '-'];
   const number1 = getRandomNum(1, 100);
   const number2 = getRandomNum(1, number1);
-  const getRandomoperator = operator[getRandomNum(0, operator.length)];
-  const question = `${number1}${getRandomoperator}${number2}`;
-  const correctAnswer = calculate(number1, number2, getRandomoperator).toString();
+  const randomOperator = operator[getRandomNum(0, operator.length)];
+  const question = `${number1}${randomOperator}${number2}`;
+  const correctAnswer = calculate(number1, number2, randomOperator).toString();
   const gameData = [correctAnswer, question];
   return gameData;
 };

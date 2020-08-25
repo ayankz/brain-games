@@ -1,12 +1,21 @@
 # backend-project-lvl1
 INSTALLATION
+
 Using npm:
+
 $ npm install
+
+
 Choose game in folder games and write using terminal:
+
 $ brain-calc
+
 $ brain-gcd
+
 $ brain-prime
+
 $ brain-progression
+
 
 
 <a href="https://codeclimate.com/github/ayankz/backend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/4de05ad3893a0db52e5e/maintainability" /></a>

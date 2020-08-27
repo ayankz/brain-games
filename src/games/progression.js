@@ -4,11 +4,11 @@ import getRandomNum from '../random.js';
 const progressionLength = 10;
 const maxStep = 6;
 const description = 'What number is missing in the progression?';
-const makeProgression = (progressionLength, maxStep) => {
+const makeProgression = (length, range) => {
   const progression = [];
   const firstNumber = getRandomNum();
-  const step = getRandomNum(1, maxStep);
-  for (let i = 0; i < progressionLength; i += 1) {
+  const step = getRandomNum(1, range);
+  for (let i = 0; i < length; i += 1) {
     progression[i] = firstNumber + i * step;
   }
   return progression;

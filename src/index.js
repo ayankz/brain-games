@@ -4,7 +4,7 @@ const welcome = () => console.log('Welcome to the Brain games!');
 const greeting = (userName) => console.log(`Hello ${userName}`);
 const iterationsCount = 3;
 
-const getAnswer = (userName, getGameData) => {
+const compareWithCorrectAnswer = (userName, getGameData) => {
   for (let i = 1; i <= iterationsCount; i += 1) {
     const [correctAnswer, question] = getGameData();
     console.log(`Question: ${question}`);
@@ -25,7 +25,7 @@ const gameStart = (description, getGameData) => {
   const userName = readlineSync.question('May I have your name? ');
   greeting(userName);
   console.log(description);
-  getAnswer(userName, getGameData);
+  compareWithCorrectAnswer(userName, getGameData);
 };
 
 export default gameStart;
